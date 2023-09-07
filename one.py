@@ -8,6 +8,4 @@ starts with overview:
 - OOP - classes and objects
 - Project - API request to GitLab
 
-
-
 """
