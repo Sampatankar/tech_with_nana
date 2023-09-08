@@ -76,6 +76,59 @@ The Except part can be used to capture a system or logic response on the product
 
 #While Loops:
 """
-Lets take a break for dinner! Continue from 1:50:12, while loops
+Use while loops to make a programme continue on until it reaches a predefined stop point.
+"""
+
+
+#Basic List Operations:
+"""
+- create a list: []
+- use a specific element: name_of_list[element index int]
+- add to end of list: name_of_list.append("element")
+Used to store multiple items of data
+"""
+
+
+#Sets:
+"""
+Unlike lists, sets do NOT allow duplicate values
+- set(name_of_set)
+- add elements: name_of_set.add("name_of_element")
+- remove elements: name_of_set.remove("name_of_element")
+The .remove function works on BOTH sets and lists
+"""
+
+
+#Built-in Functions:
+"""
+Built-in functions within Python for each data type
+These are easily searched for
+"""
+
+
+#Dictionary Data Type:
+"""
+Has key:value pairs
+{"key": value, "key": value}
+To get a value, we need to go via the key:
+- 1) square brackets: name_of_dict["key_of_value_required"]
+- 2) get() method: name_of_dict.get("key_of_value_required")
+
+Summary of Python Data Types:
+- Numeric: int, flt, complex
+- String: str
+- Sequence: list, tuple, range
+- Binary: bytes, bytearray, memoryview
+- Mapping: dict.
+- Boolean: bool
+- Sets: set, frozenset
+- None: NoneType
+"""
+
+
+#Modules:
+"""
+Start off with Modules at 3:01:35
+maybe do some code with it
 """
 
