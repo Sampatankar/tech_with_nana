@@ -128,7 +128,76 @@ Summary of Python Data Types:
 
 #Modules:
 """
-Start off with Modules at 3:01:35
-maybe do some code with it
+When you have much more logic, you will need to structure your logic/code so that related code is in one module, and others are in others.
+
+You will need to import modules, or better yet, specific functions from other modules so you do not repeat logic:
+e.g. from helper import validate_and_execute, user_input_message
+- in this case, helper is from a 'module' or single file called helper.py and two functions have been imported.
+- These functions/modules can be created or you can use the built-in ones from Python, e.g. the Logging module
+"""
+
+
+#Tech with Nana's Countdown App
+"""
+The YT'er wants us to build a countdown app. I will consider this, as I want to build the same starter app in every new language I begin to learn and use.
+"""
+
+
+#Overview of pip/PyPi:
+"""
+How to install other packages
+"""
+
+#Project Automation:
+"""
+How to read excel spreadsheets in preparation for automating actions.  This is what I was doing at Relative prior to leaving
+- use of openpyxl package
+- pass into Pandas etc. 
+- There will be other examples from Python for Data Analysis - upcoming!
+"""
+
+
+#Classes and Objects - OOP:
+"""
+A Class is an object that has attributes that would be the same for every utilisation of that object.
+This is useful for, for example, I.D. card details which needs the same variables filled out for every user.
+You would create a Class using an __init__ function
+Functions that belong to a class are called Methods!
+"""
+
+# An example of Class creation:
+class User:
+    def __init__(self, email, name, password, current_job_title) -> None:
+        self.email = email
+        self.name = name
+        self.password = password
+        self.current_job_title = current_job_title
+    # the self constructur is then defined with the name of the parameter we want to feed into it. Param names could be anything!
+
+    def change_password(self, new_password):
+        self.password = new_password
+
+    def change_job_title(self, new_job_title):
+        self.current_job_title = new_job_title
+
+    def get_user_info(self):
+        print(f"User {self.name} currently works as a {self.current_job_title}. You can contact them at {self.email}.")
+
+# An example of Class use:
+app_user_one = User("sp@sp.com", "sam p", "1234", "Ultra Programmer Extraordinaire")
+# After setting a variable that utilises a class and adds in values for each param, lets call some methods:
+app_user_one.get_user_info()
+
+"""
+We would create the class in it's own module.  We would then call and use the classes in main.py
+How does main.py know how to find the classes:
+- import name_of_file_in_which_classes_are_constructed
+"""
+
+#APIs:
+"""
+Allows Python (and your code) to speak with external applications.
+- You need to use the Requests module (access via PyPI).
+- Use the docs both for requests package and also the third party API to understand technical and fair use.
 """
 
